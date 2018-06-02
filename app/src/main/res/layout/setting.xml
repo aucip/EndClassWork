@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back01"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:text="设置"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ccc"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="仅在WIFi下加载图片"
+            android:textSize="14sp"/>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <include layout="@layout/divider_1px_hor"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="清空缓存"
+        android:textSize="14sp" />
+    <include layout="@layout/divider_1px_hor"/>
+    <TextView
+        android:id="@+id/tv_cache_size"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="安全中心"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp" />
+    <include layout="@layout/divider_1px_hor"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="检查更新"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:text="当前版本v1.0.0"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ccc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:text="给个好评"
+        android:gravity="center"
+        android:textSize="14sp" />
+    <include layout="@layout/divider_1px_hor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:text="问题反馈"
+        android:gravity="center"
+        android:textSize="14sp" />
+    <include layout="@layout/divider_1px_hor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:text="推荐给好基友"
+        android:gravity="center"
+        android:textSize="14sp" />
+    <include layout="@layout/divider_1px_hor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:text="联系我"
+        android:gravity="center"
+        android:textSize="14sp" />
+    <include layout="@layout/divider_1px_hor"/>
+</LinearLayout>

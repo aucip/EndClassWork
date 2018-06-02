@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FF5000"
+        android:text="主页"
+        android:textSize="23sp"
+        android:textColor="#fff"
+        android:gravity="center"  />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--解决与SwipeRefreshLayout的滑动冲突问题-->
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"/>
+
+                    <com.example.gc.endclasswork.recycle.BannerIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignBottom="@id/recycler"
+                        app:radius="3dp"
+                        app:selectColor="@color/colorAccent"
+                        app:space="10dp"
+                        app:unselectedColor="#0ff"/>
+                </RelativeLayout>
+
+                <include layout="@layout/menu_10"></include>
+
+                <LinearLayout
+                    android:id="@+id/ll_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/taobao_headline" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/ccc"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/headline_bg"
+                                android:padding="2.5dp"
+                                android:text="最新"
+                                android:textColor="#cd0000" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:singleLine="true"
+                                android:text="马丁靴的正确穿搭，让你的帅气更上一层楼"
+                                android:textColor="#333333" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/headline_bg"
+                                android:padding="2.5dp"
+                                android:text="最新"
+                                android:textColor="#cd0000" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:singleLine="true"
+                                android:text="秋冬款棉袄惊喜价，只卖199，赶快来买"
+                                android:textColor="#333333" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/lunbo1_2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <include layout="@layout/divider_1px_hor"></include>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#fff"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="热门市场"
+                        android:textColor="#cd0000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="更多>"
+                        android:textColor="#666666" />
+                </RelativeLayout>
+
+                <include layout="@layout/divider_1px_hor"/>
+                <!--底部视图-->
+                <include layout="@layout/menu_4"/>
+
+                <include layout="@layout/menu_bottom"/>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
