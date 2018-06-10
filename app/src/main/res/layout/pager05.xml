@@ -37,11 +37,12 @@
             android:layout_height="100dp"
             android:src="@drawable/pager_five_01"/>
         <TextView
+            android:id="@+id/tv_pager05"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="15871610393"
-            android:textSize="18sp"/>
+            android:text="Hello"
+            android:textSize="20sp"/>
     </LinearLayout>
     <include layout="@layout/divider_1px_hor"/>
     <LinearLayout

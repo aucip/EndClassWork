@@ -16,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MainActivity"/>
         <activity android:name=".activity.Activity_register" />
         <activity android:name=".activity.Activity_login" />
         <activity android:name=".activity.Activity_one" />
@@ -23,8 +24,10 @@
         <activity android:name=".activity.Activity_three" />
         <activity android:name=".activity.Activity_four" />
         <activity android:name=".activity.Activity_five" />
-        <activity android:name=".activity.Activity_setting" />
-        <activity android:name=".activity.MainActivity"></activity>
-    </application>
+        <activity android:name=".activity.Activity_setting" >
 
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 </manifest>

@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.example.gc.endclasswork.MyPagerAdapter;
@@ -30,7 +31,7 @@ import java.util.List;
 import static android.view.View.*;
 
 public class MainActivity extends Activity implements OnClickListener {
-    private Handler mHandler;
+
     private ViewPager viewPager;    //用来放置界面切换
     private List<View> myViews = new ArrayList<View>();
     //LocalActivityManager用来获取每个activity的view,放于Adapter中
@@ -65,11 +66,9 @@ public class MainActivity extends Activity implements OnClickListener {
         setContentView(R.layout.activity_main);
         manager = new LocalActivityManager(this, true);
         manager.dispatchCreate(savedInstanceState);
-        mHandler = new Handler();
         initView();
         initViewPage();
         initEvent();
-
     }
     public void initView(){
         viewPager = (ViewPager)findViewById(R.id.vpager);
