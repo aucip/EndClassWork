@@ -1,4 +1,4 @@
-package com.example.gc.endclasswork.activity;
+package com.example.gc.endclasswork;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,8 +12,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.example.gc.endclasswork.MyDatabaseHelper;
-import com.example.gc.endclasswork.R;
+
+import com.example.gc.endclasswork.activity.MainActivity;
+
 import static android.widget.Toast.LENGTH_SHORT;
 
 public class Activity_login extends AppCompatActivity {

@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.MainActivity"/>
-        <activity android:name=".activity.Activity_register" />
-        <activity android:name=".activity.Activity_login" />
+        <activity android:name=".Activity_register" />
+        <activity android:name=".Activity_login" />
         <activity android:name=".activity.Activity_one" />
         <activity android:name=".activity.Activity_two" />
         <activity android:name=".activity.Activity_three" />

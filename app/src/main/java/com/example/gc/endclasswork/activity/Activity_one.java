@@ -53,10 +53,12 @@ public class Activity_one extends Activity implements SwipeRefreshLayout.OnRefre
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(bannerAdapter);
+        //开始位于 list.size()*10 处，避免了一开始position为0不能前滑的尴尬
         recyclerView.scrollToPosition(imageList.size() * 10);
         //一页一页滑动
         PagerSnapHelper pagerSnapHelper = new PagerSnapHelper();
         pagerSnapHelper.attachToRecyclerView(recyclerView);
+
         final BannerIndicator bannerIndicator = (BannerIndicator)findViewById(R.id.indicator);
         bannerIndicator.setNumber(imageList.size());
         //监听当前滑动状态

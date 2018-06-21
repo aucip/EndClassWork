@@ -1,4 +1,4 @@
-package com.example.gc.endclasswork.activity;
+package com.example.gc.endclasswork;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -9,11 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.gc.endclasswork.MyDatabaseHelper;
-import com.example.gc.endclasswork.R;
 
 public class Activity_register extends AppCompatActivity {
 
@@ -75,7 +71,6 @@ public class Activity_register extends AppCompatActivity {
                         register_edit04.setText(null);
                     }
                 }
-                sdb.close();
             }
         });
         /*返回按钮*/

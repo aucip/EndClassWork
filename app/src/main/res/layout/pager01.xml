@@ -48,7 +48,7 @@
                         app:unselectedColor="#0ff"/>
                 </RelativeLayout>
 
-                <include layout="@layout/menu_10"></include>
+                <include layout="@layout/pager01_menu10"></include>
 
                 <LinearLayout
                     android:id="@+id/ll_head"
@@ -163,9 +163,9 @@
 
                 <include layout="@layout/divider_1px_hor"/>
                 <!--底部视图-->
-                <include layout="@layout/menu_4"/>
+                <include layout="@layout/pager01_menu4"/>
 
-                <include layout="@layout/menu_bottom"/>
+                <include layout="@layout/pager01_botton"/>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>

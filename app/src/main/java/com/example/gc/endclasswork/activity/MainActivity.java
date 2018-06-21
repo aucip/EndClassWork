@@ -30,6 +30,10 @@ import java.util.List;
 
 import static android.view.View.*;
 
+/**
+ * Created by 龚 聪 on 2018/5/24.
+ */
+
 public class MainActivity extends Activity implements OnClickListener {
 
     private ViewPager viewPager;    //用来放置界面切换
@@ -214,6 +218,7 @@ public class MainActivity extends Activity implements OnClickListener {
         tv_cart.setTextColor(Color.BLACK);
         tv_my.setTextColor(Color.BLACK);
     }
+
     @Override
     public boolean onKeyDown(int keyCode,KeyEvent event) {        // 如果是返回键
         Intent startMain = new Intent(Intent.ACTION_MAIN);
